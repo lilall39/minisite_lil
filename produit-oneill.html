@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Veste O’Neill zippée</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Ma Boutique</h1>
+  </header>
+
+  <main class="product-page">
+    <h1>Veste O’Neill zippée</h1>
+    <a href="index.html">← Retour à la boutique</a>
+
+    <div class="product-layout">
+      <!-- Colonne images -->
+      <div class="product-images">
+        <img id="mainImage" src="assets/veste_oneill1.jpg" alt="Veste O’Neill" class="main-image">
+
+        <div class="thumbnails">
+          <img src="assets/veste_oneill1.jpg" alt="Vue avant" onclick="changeImage(this)">
+          <img src="assets/veste_oneill2.jpg" alt="Vue côté" onclick="changeImage(this)">
+          <img src="assets/veste_oneill3.jpg" alt="Vue arrière" onclick="changeImage(this)">
+        </div>
+      </div>
+
+      <!-- Colonne description -->
+      <div class="product-details">
+        <h2>Description</h2>
+        <p>Veste O’Neill zippée, look sportif et décontracté. 
+        Parfaite pour la ville ou les activités de plein air.</p>
+        <p><strong>Prix : 35 €</strong></p>
+        <a href="index.html" class="btn">Retour à la boutique</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ma Boutique</p>
+  </footer>
+
+</body>
+</html>
+
