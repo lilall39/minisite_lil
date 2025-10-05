@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Doudoune grise matelassée</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Bandeau haut -->
+  <header>
+    <h1 class="titre-principal">Ma boutique sur Vinted – Lil800</h1>
+    <div class="bandeau-info">
+     ⚠️ Ce site est une vitrine personnelle. Vous serez redirigé vers mon Vinted (LIL800) pour acheter ce produit. (Un compte Vinted est obligatoire pour acheter, mais vous pouvez voir l'article sans compte Vinted 😉)
+    </div>
+  </header>
+
+  <!-- Contenu produit -->
+  <main class="product-page">
+    <!-- Image principale + miniatures -->
+    <div class="product-image">
+      <img id="main-image" src="assets/doudoune1.jpg" alt="Doudoune grise matelassée">
+      <div class="thumbnails">
+        <img src="assets/doudoune1.jpg" alt="Vue 1" onclick="document.getElementById('main-image').src=this.src">
+        <img src="assets/doudoune2.jpg" alt="Vue 2" onclick="document.getElementById('main-image').src=this.src">
+        <img src="assets/doudoune3.jpg" alt="Vue 3" onclick="document.getElementById('main-image').src=this.src">
+      </div>
+    </div>
+
+    <!-- Détails produit -->
+    <div class="product-details">
+      <h1>Doudoune grise matelassée</h1>
+      <p><strong>Description :</strong> Doudoune grise rembourrée très chaude et légère, idéale pour l’hiver.</p>
+      <p><strong>Taille :</strong> L</p>
+      <p><strong>Marque :</strong> FB Sister</p>
+      <p><strong>État :</strong> Neuf avec étiquette</p>
+      <p><strong>Prix :</strong> 35 €</p>
+
+      <!-- Bouton Vinted -->
+      <a href="https://www.vinted.fr/items/7172423138-doudoune-gris-clair-capuche-fb-sister-neuve-etiquette-taille-l" 
+         target="_blank" 
+         class="btn-vinted">
+        Acheter sur Vinted
+      </a>
+
+      <p class="info-vinted">ℹ️ L’achat se fait uniquement via Vinted (connexion ou inscription requise).</p>
+
+      <!-- Bouton retour -->
+      <a href="index.html" class="btn-retour">← Retour à la boutique</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Ma Boutique</p>
+  </footer>
+
+</body>
+</html>
