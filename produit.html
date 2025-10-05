@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veste O'Neill - Détails produit</title>
+  <meta name="description" content="Veste O'Neill zippée à motif géométrique. Très bon état, taille M.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="index.html" class="back-link">← Retour à la boutique</a>
+
+  <main class="product-container">
+    <!-- Image + miniatures (⚠️ PAS DE <a href="..."> autour des images) -->
+    <div class="product-image">
+      <img id="mainImage" src="assets/veste_oneill.jpg" alt="Veste O'Neill vue principale" />
+      <div class="thumbnails">
+        <img src="assets/veste_oneill.jpg" alt="Veste O'Neill - vue 1" onclick="changeImage(this)" />
+        <img src="assets/veste_oneill_2.jpg" alt="Veste O'Neill - vue 2" onclick="changeImage(this)" />
+        <img src="assets/veste_oneill_3.jpg" alt="Veste O'Neill - vue 3" onclick="changeImage(this)" />
+      </div>
+    </div>
+
+    <!-- Détails -->
+    <div class="product-details">
+      <h1>Veste zippée O'Neill à motif géométrique</h1>
+      <p class="price">45 €</p>
+      <p>État : Très bon • Taille M</p>
+      <p>Superbe veste O'Neill, confortable et tendance. Idéale mi-saison, motifs géométriques. </p>
+      <button class="buy-btn">Ajouter au panier</button>
+    </div>
+  </main>
+
+  <!-- Lightbox (zoom plein écran) -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightboxImage" src="" alt="Zoom image produit" />
+  </div>
+
+  <!-- JS en defer pour que les éléments existent au moment où le script s’exécute -->
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
+
