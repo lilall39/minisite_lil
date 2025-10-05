@@ -4,47 +4,62 @@
   <meta charset="UTF-8">
   <title>Veste Geographical Norway</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
 
+  <!-- Bandeau haut -->
   <header>
-    <h1>Ma Boutique</h1>
+    <h1 class="titre-principal">Ma boutique sur Vinted – Lil800</h1>
+    <div class="bandeau-info">
+      ⚠️ Ce site est une vitrine personnelle. Vous serez redirigé vers mon Vinted (LIL800) pour acheter ce produit. (Un compte Vinted est obligatoire pour acheter, mais vous pouvez voir l'article sans compte Vinted 😉)
+    </div>
   </header>
 
+  <!-- Contenu produit -->
   <main class="product-page">
-    <h1>Veste Geographical Norway</h1>
-    <a href="index.html">← Retour à la boutique</a>
-
-    <div class="product-layout">
-      <!-- Colonne images -->
-      <div class="product-images">
-        <img id="mainImage" src="assets/norway1.jpg" alt="Veste Geographical Norway" class="main-image">
-
-        <div class="thumbnails">
-          <img src="assets/norway1.jpg" alt="Vue intérieure" onclick="changeImage(this)">
-          <img src="assets/norway2.jpg" alt="Vue avant" onclick="changeImage(this)">
-          <img src="assets/norway3.jpg" alt="Détails" onclick="changeImage(this)">
-        </div>
+    <!-- Image principale + miniatures -->
+    <div class="product-image">
+      <img id="main-image" src="assets/norway1.jpg" alt="Veste Geographical Norway">
+      <div class="thumbnails">
+        <img src="assets/norway1.jpg" alt="Vue 1" onclick="document.getElementById('main-image').src=this.src">
+        <img src="assets/norway2.jpg" alt="Vue 2" onclick="document.getElementById('main-image').src=this.src">
+        <img src="assets/norway3.jpg" alt="Vue 3" onclick="document.getElementById('main-image').src=this.src">
       </div>
+    </div>
 
-      <!-- Colonne description -->
-      <div class="product-details">
-        <h2>Description</h2>
-        <p>Veste Geographical Norway chaude et confortable, idéale pour l’hiver. 
-        Style moderne et finition de qualité.</p>
-        <p><strong>Prix : 39 €</strong></p>
-        <a href="index.html" class="btn">Retour à la boutique</a>
-      </div>
+    <!-- Détails produit -->
+    <div class="product-details">
+      <h1>Veste Geographical Norway</h1>
+      <p><strong>Description :</strong> Veste chaude Geographical Norway, coupe vent et imperméable, parfaite pour les randonnées et le quotidien.</p>
+      <p><strong>Taille :</strong> M</p>
+      <p><strong>Marque :</strong> Geographical Norway</p>
+      <p><strong>État :</strong> Très bon état</p>
+      <p><strong>Prix :</strong> 45 €</p>
+
+      <!-- Bouton Vinted -->
+    <!-- Bouton Vinted -->
+<a href="https://www.vinted.fr/items/7127283126-blouson-geographical-norway-xl-gris-fonce-neuf" 
+   target="_blank" 
+   class="btn-vinted">
+  Acheter sur Vinted
+</a>
+
+<p class="info-vinted">ℹ️ L’achat se fait uniquement via Vinted (connexion ou inscription requise).</p>
+
+</a>
+
+
+      <p class="info-vinted">ℹ️ L’achat se fait uniquement via Vinted (connexion ou inscription requise).</p>
+
+      <!-- Bouton retour -->
+      <a href="index.html" class="btn-retour">← Retour à la boutique</a>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Ma Boutique</p>
+    <p>© 2025 Ma Boutique</p>
   </footer>
 
 </body>
 </html>
-
- 
 

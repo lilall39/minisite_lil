@@ -1,46 +1,62 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Veste O’Neill zippée</title>
+  <title>Veste O’Neill</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
 
+  <!-- Bandeau haut -->
   <header>
-    <h1>Ma Boutique</h1>
+    <h1 class="titre-principal">Ma boutique sur Vinted – Lil800</h1>
+    <div class="bandeau-info">
+     ⚠️ Ce site est une vitrine personnelle. Vous serez redirigé vers mon Vinted (LIL800) pour acheter ce produit. (Un compte Vinted est obligatoire pour acheter, mais vous pouvez voir l'article sans compte Vinted 😉)
+    </div>
   </header>
 
+  <!-- Contenu produit -->
   <main class="product-page">
-    <h1>Veste O’Neill zippée</h1>
-    <a href="index.html">← Retour à la boutique</a>
-
-    <div class="product-layout">
-      <!-- Colonne images -->
-      <div class="product-images">
-        <img id="mainImage" src="assets/veste_oneill1.jpg" alt="Veste O’Neill" class="main-image">
-
-        <div class="thumbnails">
-          <img src="assets/veste_oneill1.jpg" alt="Vue avant" onclick="changeImage(this)">
-          <img src="assets/veste_oneill2.jpg" alt="Vue côté" onclick="changeImage(this)">
-          <img src="assets/veste_oneill3.jpg" alt="Vue arrière" onclick="changeImage(this)">
-        </div>
+    <!-- Image principale + miniatures -->
+    <div class="product-image">
+      <img id="main-image" src="assets/oneill1.jpg" alt="Veste O’Neill">
+      <div class="thumbnails">
+        <img src="assets/oneill1.jpg" alt="Vue 1" onclick="document.getElementById('main-image').src=this.src">
+        <img src="assets/oneill2.jpg" alt="Vue 2" onclick="document.getElementById('main-image').src=this.src">
+        <img src="assets/oneill3.jpg" alt="Vue 3" onclick="document.getElementById('main-image').src=this.src">
       </div>
+    </div>
 
-      <!-- Colonne description -->
-      <div class="product-details">
-        <h2>Description</h2>
-        <p>Veste O’Neill zippée, look sportif et décontracté. 
-        Parfaite pour la ville ou les activités de plein air.</p>
-        <p><strong>Prix : 35 €</strong></p>
-        <a href="index.html" class="btn">Retour à la boutique</a>
-      </div>
+    <!-- Détails produit -->
+    <div class="product-details">
+      <h1>Veste O’Neill</h1>
+      <p><strong>Description :</strong> Veste de ski O’Neill, coupe technique, chaude et confortable.</p>
+      <p><strong>Taille :</strong> M</p>
+      <p><strong>Marque :</strong> O’Neill</p>
+      <p><strong>État :</strong> Très bon</p>
+      <p><strong>Prix :</strong> 55 €</p>
+
+      <!-- Bouton Vinted -->
+      <!-- Bouton Vinted -->
+<!-- Bouton Vinted -->
+<a href="https://www.vinted.fr/items/7134951418-veste-zippee-oneill-a-motif-geometrique-capuche" 
+   target="_blank" 
+   class="btn-vinted">
+  Acheter sur Vinted
+</a>
+
+<p class="info-vinted">ℹ️ L’achat se fait uniquement via Vinted (connexion ou inscription requise).</p>
+
+<!-- Bouton retour -->
+<a href="index.html" class="btn-retour">← Retour à la boutique</a>
+
+<p class="info-vinted">ℹ️ L’achat se fait uniquement via Vinted (connexion ou inscription requise).</p>
+
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Ma Boutique</p>
+    <p>© 2025 Ma Boutique</p>
   </footer>
 
 </body>
