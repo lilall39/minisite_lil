@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://lilal39.github.io/minisite_lil/sitemap.xml
+ 
